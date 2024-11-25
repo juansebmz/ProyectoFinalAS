@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityArticulo">
+
+    <TextView
+        android:id="@+id/txtArticulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/Articulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtIdArticulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/id"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtArticulo" />
+
+    <EditText
+        android:id="@+id/etIdArticulo"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/txtIdArticulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtArticulo" />
+
+    <TextView
+        android:id="@+id/txtNombreArticulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/nombre"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdArticulo" />
+
+    <EditText
+        android:id="@+id/etNombreArticulo"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toEndOf="@+id/txtNombreArticulo"
+        app:layout_constraintTop_toBottomOf="@+id/etIdArticulo" />
+
+    <TextView
+        android:id="@+id/txtUnidadMedidaArticulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/Unidad_Medida"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreArticulo" />
+
+    <EditText
+        android:id="@+id/etUnidadMedidaArticulo"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtUnidadMedidaArticulo"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreArticulo" />
+
+    <Button
+        android:id="@+id/btnAdicionarArticulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Adicionar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUnidadMedidaArticulo" />
+
+    <Button
+        android:id="@+id/btnModificarArticulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Modificar"
+        app:layout_constraintStart_toEndOf="@+id/btnAdicionarArticulo"
+        app:layout_constraintTop_toBottomOf="@+id/etUnidadMedidaArticulo" />
+
+    <Button
+        android:id="@+id/btnBorrarArticulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Borrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnModificarArticulo"
+        app:layout_constraintTop_toBottomOf="@+id/etUnidadMedidaArticulo" />
+
+    <TextView
+        android:id="@+id/txtInfoArticulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdicionarArticulo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

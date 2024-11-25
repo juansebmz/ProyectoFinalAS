@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ProyectoFinal</string>
+    <string name="Articulo">Articulo</string>
+    <string name="id">ID</string>
+    <string name="nombre">Nombre</string>
+    <string name="Unidad_Medida">Unidad Medida</string>
+    <string name="Adicionar">Adicionar</string>
+    <string name="Modificar">Modificar</string>
+    <string name="Borrar">Borrar</string>
+    <string name="Ciudad">Ciudad</string>
+    <string name="Cliente">Cliente</string>
+    <string name="Apellido">Apellido</string>
+    <string name="Celular">Celular</string>
+    <string name="Carrito">Carrito</string>
+    <string name="Cantidad">Cantidad</string>
+    <string name="Valor">Valor</string>
+    <string name="Subtotal">Subtotal</string>
+    <string name="Actualizar">Actualizar</string>
+</resources>

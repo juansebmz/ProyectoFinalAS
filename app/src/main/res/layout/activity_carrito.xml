@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarritoActivity">
+
+    <TextView
+        android:id="@+id/txtCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/Carrito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtIdCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/id"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCarrito" />
+
+    <EditText
+        android:id="@+id/etIdCarrito"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/txtIdCarrito"
+        app:layout_constraintTop_toBottomOf="@+id/txtCarrito" />
+
+    <TextView
+        android:id="@+id/txtClienteCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/Cliente"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdCarrito" />
+
+    <Spinner
+        android:id="@+id/spClienteCarrito"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtClienteCarrito"
+        app:layout_constraintTop_toBottomOf="@+id/etIdCarrito" />
+
+    <TextView
+        android:id="@+id/txtCiudadCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/Ciudad"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtClienteCarrito" />
+
+    <Spinner
+        android:id="@+id/spCiudadCarrito"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCiudadCarrito"
+        app:layout_constraintTop_toBottomOf="@+id/spClienteCarrito" />
+
+    <TextView
+        android:id="@+id/txtArticuloCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/Articulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCiudadCarrito" />
+
+    <Spinner
+        android:id="@+id/spArticuloCarrito"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtArticuloCarrito"
+        app:layout_constraintTop_toBottomOf="@+id/spCiudadCarrito" />
+
+    <TextView
+        android:id="@+id/txtCantidadCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/Cantidad"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtArticuloCarrito" />
+
+    <EditText
+        android:id="@+id/etCantidadCarrito"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/txtIdCarrito"
+        app:layout_constraintTop_toBottomOf="@+id/spArticuloCarrito" />
+
+    <TextView
+        android:id="@+id/txtValorCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Valor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidadCarrito" />
+
+    <EditText
+        android:id="@+id/etValorCarrito"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/txtIdCarrito"
+        app:layout_constraintTop_toBottomOf="@+id/etCantidadCarrito" />
+
+    <TextView
+        android:id="@+id/txtSubtotalCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Subtotal"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValorCarrito" />
+
+    <TextView
+        android:id="@+id/txtViewSubtotalCarrito"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:inputType="none"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/txtIdCarrito"
+        app:layout_constraintTop_toBottomOf="@+id/etValorCarrito" />
+
+
+    <Button
+        android:id="@+id/btnAdicionarCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Adicionar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewSubtotalCarrito" />
+
+    <Button
+        android:id="@+id/btnActualizarCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Actualizar"
+        app:layout_constraintStart_toEndOf="@+id/btnAdicionarCarrito"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewSubtotalCarrito" />
+
+    <Button
+        android:id="@+id/btnBorrarCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Borrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnActualizarCarrito"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewSubtotalCarrito" />
+
+    <TextView
+        android:id="@+id/txtInfoCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdicionarCarrito" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClienteActivity"
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="77dp">
+
+    <TextView
+        android:id="@+id/txtCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/Cliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtIdCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/id"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCliente" />
+
+    <EditText
+        android:id="@+id/etIdCliente"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtIdCliente"
+        app:layout_constraintTop_toBottomOf="@+id/txtCliente" />
+
+    <TextView
+        android:id="@+id/txtNombreCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/nombre"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdCliente" />
+
+    <EditText
+        android:id="@+id/etNombreCliente"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toEndOf="@+id/txtApellidoCliente"
+        app:layout_constraintTop_toBottomOf="@+id/etIdCliente" />
+
+    <TextView
+        android:id="@+id/txtApellidoCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/Apellido"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreCliente" />
+
+    <EditText
+        android:id="@+id/etApellidoCliente"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toEndOf="@+id/txtApellidoCliente"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreCliente" />
+
+    <EditText
+        android:id="@+id/etCelularCliente"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtCelularCliente"
+        app:layout_constraintTop_toBottomOf="@+id/etApellidoCliente" />
+
+    <TextView
+        android:id="@+id/txtCelularCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/Celular"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellidoCliente" />
+
+    <Button
+        android:id="@+id/btnAdicionarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Adicionar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCelularCliente" />
+
+    <Button
+        android:id="@+id/btnBorrarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Borrar"
+        app:layout_constraintStart_toEndOf="@+id/btnAdicionarCliente"
+        app:layout_constraintTop_toBottomOf="@+id/etCelularCliente" />
+
+    <Button
+        android:id="@+id/btnActualizarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Actualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBorrarCliente"
+        app:layout_constraintTop_toBottomOf="@+id/etCelularCliente" />
+
+    <TextView
+        android:id="@+id/txtInfoCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdicionarCliente" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
