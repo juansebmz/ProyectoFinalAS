@@ -9,8 +9,4 @@ class Ciudad {
     }
 
     constructor()
-
-    override fun toString(): String {
-        return "ID: $id, Nombre: $nombre"
-    }
 }
